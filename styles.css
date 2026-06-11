@@ -248,6 +248,52 @@ main { max-width: var(--max-width); margin: 0 auto; padding: 0 24px; }
   line-height: 1.55;
 }
 
+/* FEATURES responsive styles (Agent B) */
+@media (max-width: 960px) {
+  .features__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .how-it-works {
+    grid-template-columns: 1fr;
+  }
+
+  .how-it-works h3 {
+    max-width: 18ch;
+  }
+}
+
+@media (max-width: 680px) {
+  .features {
+    padding: 64px 0 72px;
+  }
+
+  .features__header {
+    margin-bottom: 30px;
+    text-align: left;
+  }
+
+  .features__grid,
+  .how-it-works__steps {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-card {
+    min-height: auto;
+    padding: 22px;
+  }
+
+  .feature-card__icon {
+    margin-bottom: 18px;
+  }
+
+  .how-it-works {
+    margin-top: 18px;
+    padding: 24px;
+    border-radius: 22px;
+  }
+}
+
 /* NAV styles (Agent A) */
 .nav {
   position: sticky;
