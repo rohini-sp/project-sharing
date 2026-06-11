@@ -17,6 +17,7 @@ Reference the live sites for brand, content, and structure:
 
 ## Sections
 <!-- agents: list sections as you add them -->
+- Hero — `sections/hero.html` (headline, subhead, primary CTA)
 
 ## How to preview
 Open `index.html` in a browser, or `python -m http.server` in this folder.

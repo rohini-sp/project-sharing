@@ -3,11 +3,17 @@
    Expect to reconcile with other agents editing this same file. */
 
 :root {
-  /* fill these from the real XO brand (xo.builders) */
+  /* XO brand tokens — sourced from xo.builders (see content/copy.md) */
   --color-bg: #ffffff;
-  --color-fg: #111111;
-  --color-accent: #000000;
-  --font-sans: system-ui, sans-serif;
+  --color-fg: #1f1f1e;
+  --color-accent: #22c55e;        /* brand green */
+  --color-accent-lime: #83d63a;   /* lighter lime */
+  --color-accent-cyan: #06b6d4;   /* secondary cyan */
+  --color-ink: #0a0a0a;
+  --color-muted: #616161;
+  --color-surface: #f8f8f8;
+  --color-border: #e6e6e6;
+  --font-sans: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
   --max-width: 1100px;
 }
 
@@ -16,6 +22,84 @@ body { margin: 0; font-family: var(--font-sans); color: var(--color-fg); backgro
 main { max-width: var(--max-width); margin: 0 auto; padding: 0 24px; }
 
 /* HERO styles below */
+.hero {
+  background:
+    radial-gradient(1100px 480px at 50% -10%, rgba(131, 214, 58, 0.16), transparent 70%),
+    var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+}
+.hero__inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 96px 24px 104px;
+  text-align: center;
+}
+.hero__eyebrow {
+  margin: 0 0 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+.hero__headline {
+  margin: 0 auto 20px;
+  max-width: 14ch;
+  font-size: clamp(2.4rem, 6vw, 4rem);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  font-weight: 800;
+  color: var(--color-ink);
+}
+.hero__accent {
+  background: linear-gradient(90deg, var(--color-accent-lime), var(--color-accent));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.hero__subhead {
+  margin: 0 auto 36px;
+  max-width: 56ch;
+  font-size: clamp(1.05rem, 2.2vw, 1.25rem);
+  line-height: 1.6;
+  color: var(--color-muted);
+}
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+}
+.hero__cta {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  background: var(--color-accent);
+  color: #ffffff;
+  border: 1px solid var(--color-accent);
+  transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
+}
+.hero__cta:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px rgba(34, 197, 94, 0.28);
+}
+.hero__cta--ghost {
+  background: #ffffff;
+  color: var(--color-ink);
+  border: 1px solid var(--color-border);
+}
+.hero__cta--ghost:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  border-color: var(--color-muted);
+}
+.hero__note {
+  margin: 28px 0 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-muted);
+}
 
 /* FEATURES styles below */
 
