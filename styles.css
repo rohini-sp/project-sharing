@@ -1,0 +1,22 @@
+/* Shared global stylesheet — every agent adds their section's styles here.
+   Define design tokens once (below) and reuse them so the page stays cohesive.
+   Expect to reconcile with other agents editing this same file. */
+
+:root {
+  /* fill these from the real XO brand (xo.builders) */
+  --color-bg: #ffffff;
+  --color-fg: #111111;
+  --color-accent: #000000;
+  --font-sans: system-ui, sans-serif;
+  --max-width: 1100px;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; font-family: var(--font-sans); color: var(--color-fg); background: var(--color-bg); }
+main { max-width: var(--max-width); margin: 0 auto; padding: 0 24px; }
+
+/* HERO styles below */
+
+/* FEATURES styles below */
+
+/* FOOTER / NAV styles below */
