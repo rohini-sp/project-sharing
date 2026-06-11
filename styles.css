@@ -185,6 +185,68 @@ main { max-width: var(--max-width); margin: 0 auto; padding: 0 24px; }
   font-size: 0.96rem;
   line-height: 1.6;
 }
+.how-it-works {
+  margin-top: 28px;
+  padding: 30px;
+  border: 1px solid var(--color-border);
+  border-radius: 26px;
+  background:
+    radial-gradient(500px 180px at 18% 0%, rgba(6, 182, 212, 0.12), transparent 70%),
+    var(--color-ink);
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: 0.9fr 1.5fr;
+  gap: 32px;
+  align-items: start;
+}
+.how-it-works .features__eyebrow {
+  color: var(--color-accent-lime);
+}
+.how-it-works h3 {
+  margin: 0;
+  max-width: 12ch;
+  font-size: clamp(1.6rem, 3vw, 2.25rem);
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+}
+.how-it-works__steps {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+.how-it-works__steps li {
+  padding: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.06);
+}
+.how-it-works__steps span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 18px;
+  border-radius: 999px;
+  background: var(--color-accent);
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 800;
+}
+.how-it-works__steps strong {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+.how-it-works__steps p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
 
 /* NAV styles (Agent A) */
 .nav {
