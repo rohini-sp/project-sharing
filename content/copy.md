@@ -24,6 +24,17 @@ here so the others can reuse it.
 - **Open foundation** — built on open-source OpenClaw (200k+ GitHub stars).
 - **Three-step deploy** — create a project → pick a template → launch.
 
+## Agent B — feature capabilities from docs review
+
+- **Secure project sandboxes:** every agent runs inside a cloud project, isolated from the
+  user's local machine and ready for collaboration.
+- **Template-based launches:** choose pre-configured agents like OpenClaw, Claude Code,
+  Hermes, or XO Cowork instead of assembling infra by hand.
+- **Connected work channels:** agents can be reached from the dashboard and channels such
+  as Telegram, WhatsApp, Slack, Discord, iMessage, and web chat.
+- **Operations dashboard:** XO centralizes monitoring, restarts, sharing, model swaps,
+  patching, and uptime basics in one workspace.
+
 ## Calls to action
 
 - Primary CTA: **"Try Now for Free"**
