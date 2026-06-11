@@ -101,6 +101,21 @@ main { max-width: var(--max-width); margin: 0 auto; padding: 0 24px; }
   color: var(--color-muted);
 }
 
+/* HERO + NAV responsive polish (Agent A) */
+@media (max-width: 720px) {
+  .hero__inner { padding: 64px 20px 72px; }
+  .hero__headline { max-width: 18ch; }
+  .hero__subhead { font-size: 1.05rem; }
+  .hero__actions { flex-direction: column; align-items: stretch; }
+  .hero__cta { width: 100%; text-align: center; padding: 15px 20px; }
+
+  .nav__inner { padding: 12px 20px; }
+  .nav__links { gap: 16px; }
+  /* keep the bar tidy on small screens: surface the CTA, tuck secondary links */
+  .nav__links a:not(.nav__cta) { display: none; }
+  .nav__cta { padding: 9px 16px; }
+}
+
 /* FEATURES styles below */
 
 /* NAV styles (Agent A) */
