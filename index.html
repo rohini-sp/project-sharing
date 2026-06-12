@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="spotlight" aria-hidden="true"></div>
   <!--
     Shared assembly file. Each agent injects their section here, in order.
     Keep the markers so it's clear where each section goes.
@@ -32,7 +33,7 @@
   <main>
     <!-- HERO:START -->
     <section class="hero">
-      <div class="hero__inner">
+      <div class="hero__inner reveal">
         <p class="hero__eyebrow">SuperCharge your AI</p>
         <h1 class="hero__headline">
           Launch your AI agent <span class="hero__accent">in 1 click</span>
@@ -52,7 +53,7 @@
 
     <!-- FEATURES:START -->
     <section class="features" id="features" aria-labelledby="features-title">
-      <div class="features__header">
+      <div class="features__header reveal">
         <p class="features__eyebrow">Built for agent teams</p>
         <h2 id="features-title" class="features__title">Everything you need to launch, run, and share AI agents.</h2>
         <p class="features__intro">
@@ -62,32 +63,32 @@
       </div>
 
       <div class="features__grid" aria-label="XO product capabilities">
-        <article class="feature-card">
+        <article class="feature-card reveal">
           <span class="feature-card__icon" aria-hidden="true">01</span>
           <h3>Secure project sandboxes</h3>
           <p>Every agent runs in an isolated cloud project, keeping local machines untouched and workspaces private by default.</p>
         </article>
 
-        <article class="feature-card">
+        <article class="feature-card reveal">
           <span class="feature-card__icon" aria-hidden="true">02</span>
           <h3>Template launches</h3>
           <p>Pick OpenClaw, Claude Code, Hermes, or XO Cowork and skip the server, Docker, proxy, and setup checklist.</p>
         </article>
 
-        <article class="feature-card">
+        <article class="feature-card reveal">
           <span class="feature-card__icon" aria-hidden="true">03</span>
           <h3>Connected channels</h3>
           <p>Reach agents from the web dashboard and team channels like Telegram, WhatsApp, Slack, Discord, and web chat.</p>
         </article>
 
-        <article class="feature-card">
+        <article class="feature-card reveal">
           <span class="feature-card__icon" aria-hidden="true">04</span>
           <h3>One operations dashboard</h3>
           <p>Monitor status, restart agents, share projects, swap models, and keep the workspace managed from one place.</p>
         </article>
       </div>
 
-      <div class="how-it-works" aria-labelledby="how-it-works-title">
+      <div class="how-it-works reveal" aria-labelledby="how-it-works-title">
         <div>
           <p class="features__eyebrow">How it works</p>
           <h3 id="how-it-works-title">From blank workspace to live agent in three steps.</h3>
@@ -114,6 +115,51 @@
     <!-- FEATURES:END -->
 
     <!-- FOOTER:START -->
+    <footer class="footer" id="footer">
+      <div class="footer__inner">
+        <div class="footer__cta reveal">
+          <h2>Your next agent is one click away.</h2>
+          <p>Spin up a secure, isolated workspace and go live in under 60 seconds — no infra, no DevOps, no waiting.</p>
+          <a class="hero__cta" href="https://xo.builders">Try Now for Free</a>
+        </div>
+
+        <div class="footer__grid">
+          <div class="footer__brand">
+            <a class="nav__brand" href="/">
+              <span class="nav__logo" aria-hidden="true">XO</span>
+              <span class="nav__brand-name">builders</span>
+            </a>
+            <p>Launch, run, and share AI agents from secure cloud workspaces.</p>
+          </div>
+
+          <div class="footer__cols">
+            <div class="footer__col">
+              <h4>Product</h4>
+              <a href="#features">Features</a>
+              <a href="https://xo.builders">Templates</a>
+              <a href="#footer">Pricing</a>
+            </div>
+            <div class="footer__col">
+              <h4>Resources</h4>
+              <a href="https://docs.xo.builders">Docs</a>
+              <a href="https://xo.builders">Changelog</a>
+              <a href="https://xo.builders">Status</a>
+            </div>
+            <div class="footer__col">
+              <h4>Connect</h4>
+              <a href="https://xo.builders">Telegram</a>
+              <a href="https://xo.builders">Discord</a>
+              <a href="https://xo.builders">Slack</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__bar">
+          <span>© XO builders. Zero DevOps. Zero Downtime. Just deploy.</span>
+          <span>Built collaboratively across workspaces.</span>
+        </div>
+      </div>
+    </footer>
     <!-- FOOTER:END -->
   </main>
   <script src="app.js"></script>
